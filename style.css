@@ -1,0 +1,1476 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+@font-face {
+    font-family: 'minecraft';
+    src: url("/static/fonts/mine.ttf")
+}
+
+html, body {
+    height: 100%
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background: #e5e5e5;
+    color: #000;
+    overflow-x: hidden
+}
+
+button:active, button:focus, input {
+    outline: none
+}
+
+.margin-top {
+    margin-top: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px
+}
+
+.background-card {
+    background: #f6f6f4;
+    color: #000;
+    border: none;
+    border-radius: 10px
+}
+
+.newYear {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translateY(-70%);
+    z-index: 1000;
+    user-select: none
+}
+
+.newYear img {
+    height: inherit;
+    width: inherit;
+    user-select: none
+}
+
+.header {
+    border-radius: 10px 10px 0 0;
+    background: #fbfbfb;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #000
+}
+
+.header .logo a {
+    text-decoration: none;
+    font-family: 'minecraft';
+    color: #404040;
+    display: block;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 400
+}
+
+.header .menu {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center
+}
+
+.header .menu a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size: 14px;
+    transition: .7s ease;
+    font-weight: 600;
+    padding-right: 15px
+}
+
+.header .menu a:hover {
+    color: #454545
+}
+
+.header .ip {
+    padding: 15px;
+    padding-bottom: 11px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif
+}
+
+.header .ip .serverIpAdressModal {
+    text-decoration: none;
+    background: #fdb42a;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #404040;
+    width: calc(100% - 43px);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center
+}
+
+.header .ip .themeBtn {
+    text-decoration: none;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 36px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-left: 7px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center
+}
+
+.header .ip .themeBtn.dark {
+    background: hsl(210, 17%, 98%)
+    color #404040
+}
+
+.header .ip .themeBtn.white {
+    background: #343a40;
+    color: #fff
+}
+
+.header .ip span {
+    display: block;
+    padding-top: 4px;
+    width: 100%;
+    text-align: right;
+    color: #b2b2b2;
+    font-size: 11px
+}
+
+.header .ip b {
+    color: #4bd935
+}
+
+.content {
+    padding: 25px;
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+.margin-donates {
+    margin-top: 15px
+}
+
+.margin-donate {
+    margin-top: 30px
+}
+
+.donates .name {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.donates .donate {
+    display: flex;
+    width: 100%;
+    background: #dcdcdc;
+    border-radius: 15px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.donates .donate img {
+    display: block;
+    width: 100%;
+    height: 90%;
+    transform: scale(.85)
+}
+
+.donates .donate.time img {
+    display: block;
+    width: 96%;
+    height: 90%;
+    transform: scale(.85)
+}
+
+.donates .donate .name {
+    color: #404040;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px
+}
+
+.donates .donate button {
+    transform: translateY(50%);
+    font-size: 15px;
+    background: #fdb42a;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    color: #404040;
+    width: 180px;
+    height: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600
+}
+
+.donates .period {
+    color: #a7a7a7;
+    margin-top: 8px;
+    opacity: .8;
+    font-size: 15px
+}
+
+.donates .period span.active {
+    color: #fff;
+    background: #007bff
+}
+
+.donates .period span {
+    cursor: pointer;
+    padding: 10px;
+    background: #404040;
+    color: #fff;
+    padding-top: 5px;
+    border-radius: 10px;
+    padding-bottom: 5px
+}
+
+.imgDecoreDonate {
+    width: 500px;
+    float: right;
+    transform: scale(1.75)
+}
+
+.live {
+    background: #fdb42a;
+    margin-top: 25px;
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    overflow: hidden
+}
+
+.live .item {
+    width: 155px;
+    min-width: 135px;
+    max-width: 135px;
+    text-align: center;
+    transition: .6s ease;
+    padding-right: 20px
+}
+
+.live .item .name {
+    color: #404040;
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-top: 5px
+}
+
+.live .item .img {
+    background: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-radius: 15px;
+    height: 100px
+}
+
+.live .item img {
+    display: block;
+    width: 100%;
+    transform: scale(.8)
+}
+
+.case {
+    padding: 25px
+}
+
+.case .name {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 25px;
+    color: #404040;
+    text-align: center;
+    display: block
+}
+
+.case .roulette {
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background: #fbfbfb;
+    box-shadow: 0 7px 122px rgba(0, 0, 0, .07);
+    border-radius: 15px;
+    overflow: hidden
+}
+
+.case .roulette .items {
+    display: flex
+}
+
+.case .roulette .item {
+    width: 140px;
+    margin-right: 20px;
+    max-width: 140px;
+    min-width: 140px;
+    background: #dcdcdc;
+    border-radius: 15px
+}
+
+.case .roulette .item .name {
+    font-size: 15px;
+    color: #404040;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    padding-bottom: 5px
+}
+
+.case .roulette .item img {
+    display: block;
+    width: 100%;
+    transform: scale(.9)
+}
+
+.case button {
+    margin-top: 20px;
+    background: #fdb42a;
+    color: #404040;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 18px;
+    filter: drop-shadow(0 -1px 15px rgba(0, 0, 0, .13));
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600
+}
+
+.case .chanceText {
+    display: block;
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 13px;
+    padding-top: 4px
+}
+
+.donatesÐ ÐŽheck .donate {
+    display: block;
+    width: 100%;
+    background: #dcdcdc;
+    border-radius: 15px;
+    text-align: center
+}
+
+.donatesÐ ÐŽheck .donate img {
+    display: block;
+    width: 100%;
+    height: 90%;
+    transform: scale(.85)
+}
+
+.donatesÐ ÐŽheck .chance {
+    text-align: right;
+    margin-right: 7px;
+    font-family: Montserrat;
+    font-weight: 666;
+    font-style: normal;
+    padding-top: 4px
+}
+
+.nameDonate {
+    font-size: 15px;
+    color: #404040;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    display: block;
+    padding-top: -3px;
+    transform: translateY(-2px);
+    padding-bottom: 6px
+}
+
+s .donatesÐ ÐŽheck {
+    margin-top: 15px;
+    display: none
+}
+
+.openChance {
+    cursor: pointer
+}
+
+.tableDonate .name {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 25px;
+    color: #404040;
+    text-align: center;
+    display: block;
+    margin-top: 20px
+}
+
+.tick.has {
+    background: transparent url(https://storeassets.hypixel.net/store-tick-has.png) no-repeat;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1
+}
+
+.tick {
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: transparent url(https://storeassets.hypixel.net/store-tick1.png) no-repeat;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    opacity: .2;
+    margin: auto;
+    margin-top: 2px
+}
+
+.nameTable {
+    text-align: center
+}
+
+.buyCoins {
+    background: rgba(0, 0, 0, .05)
+}
+
+.bg-buyCoins {
+    background: #fbfbfb;
+    box-shadow: 0 7px 122px rgba(0, 0, 0, .1);
+    border-radius: 15px
+}
+
+@media (min-width: 1000px) {
+    .bg-buyCoins {
+        width: 90%
+    }
+
+    .marginBgCoins {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 35px;
+        justify-content: center
+    }
+
+    .buyCoins {
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+@media (max-width: 1000px) {
+    .bg-buyCoins {
+        width: 100%
+    }
+
+    .buyCoins {
+        padding-bottom: 15px
+    }
+
+    .marginBgCoins {
+        margin: 20px
+    }
+}
+
+.marginBgCoins .titleBlock {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    color: #404040
+}
+
+.form-coins {
+    margin-top: 20px;
+    margin: 25px
+}
+
+.form-coins .form-label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #404040;
+    text-align: left
+}
+
+.form-coins .form-label .red {
+    color: #e85151
+}
+
+.form-coins .input {
+    border: none;
+    background: #dfdfdf;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    display: block;
+    border-radius: 10px
+}
+
+.bg-buyCoins button {
+    filter: drop-shadow(0 -1px 15px rgba(0, 0, 0, .13));
+    background: #fdb42a;
+    display: block;
+    color: #404040;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    width: 300px;
+    height: 50px;
+    margin-top: -3px;
+    margin-bottom: 20px;
+    border-radius: 10px
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.onlyPC .decoreBuyCoins {
+    width: 400px;
+    margin-left: -98px;
+    transform: scale(1.15);
+    padding-top: 25px
+}
+
+.modal-content {
+    box-shadow: none;
+    background: url('/static/img/64x64.png');
+    color: #fff;
+    font-family: minecraft, monospace
+}
+
+.input-mine {
+    font-family: minecraft, serif;
+    position: relative;
+    width: 368px;
+    height: 40px;
+    padding: 0 14px;
+    margin: auto auto 15px;
+    border: 2px solid #a0a0a0;
+    background: #000;
+    font-size: 15px;
+    color: #fff;
+    line-height: 42px
+}
+
+@media (max-width: 992px) {
+    .input-mine {
+        width: 300px
+    }
+}
+
+.btnGoPay {
+    font-family: minecraft, monospace;
+    width: 368px;
+    height: 40px;
+    background: url("/static/img/button.png") no-repeat;
+    color: #fff;
+    text-align: center;
+    border: none;
+    line-height: 43px;
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: 2px 2px 0 #383838;
+    margin: auto auto 0
+}
+
+.btnGoPay:hover {
+    background-position: 0 -80px
+}
+
+.btnGoPay:active {
+    background-position: 0 -40px
+}
+
+.btnGoPayTime {
+    font-family: minecraft, monospace;
+    width: 368px;
+    height: 40px;
+    background: url("/static/img/button.png") no-repeat;
+    color: #fff;
+    text-align: center;
+    border: none;
+    line-height: 43px;
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: 2px 2px 0 #383838;
+    margin: auto auto 0
+}
+
+.btnGoPayTime:hover {
+    background-position: 0 -80px
+}
+
+.btnGoPayTime:active {
+    background-position: 0 -40px
+}
+
+.btnGoPayBeta {
+    font-family: minecraft, monospace;
+    width: 368px;
+    height: 40px;
+    background: url("/static/img/button.png") no-repeat;
+    color: #fff;
+    text-align: center;
+    border: none;
+    line-height: 43px;
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: 2px 2px 0 #383838;
+    margin: auto auto 0
+}
+
+.btnGoPayBeta:hover {
+    background-position: 0 -80px
+}
+
+.btnGoPayBeta:active {
+    background-position: 0 -40px
+}
+
+.btnGoMoneyPay {
+    font-family: minecraft, monospace;
+    width: 368px;
+    height: 40px;
+    background: url("/static/img/button.png") no-repeat;
+    color: #fff;
+    text-align: center;
+    border: none;
+    line-height: 43px;
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: 2px 2px 0 #383838;
+    margin: auto auto 0
+}
+
+.btnGoMoneyPay:hover {
+    background-position: 0 -80px
+}
+
+.btnGoMoneyPay:active {
+    background-position: 0 -40px
+}
+
+.swal2-actions {
+    display: none
+}
+
+.swal2-content {
+    margin-bottom: 15px;
+    color: #fff
+}
+
+.swal2-title {
+    color: #f27474
+}
+
+.swal2-icon-success .swal2-title {
+    color: #a5dc86
+}
+
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+    background: rgba(0, 0, 0, .7)
+}
+
+.swal2-popup {
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 32em;
+    max-width: 100%;
+    padding: 1.25em;
+    border: none;
+    border-radius: 5px;
+    background: url('/static/img/64x64.png');
+    font-family: minecraft, monospace;
+    font-size: 1rem
+}
+
+@media (min-width: 576px) {
+    .modal-dialog-centered {
+        min-height: calc(100% - 3.5rem)
+    }
+}
+
+.modal-dialog-centered {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - 1rem)
+}
+
+@media (min-width: 576px) {
+    .modal-dialog-centered::before {
+        height: calc(100vh - 3.5rem);
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content
+    }
+}
+
+.modal-dialog-centered::before {
+    display: block;
+    height: calc(100vh - 1rem);
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    content: ""
+}
+
+.closeModal {
+    position: absolute;
+    color: #007bff;
+    top: 5px;
+    right: 5px;
+    opacity: 1;
+    transform: scale(.9);
+    padding: 8px 16px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    transition: all 100ms;
+    border: 0 solid #fff;
+    border-radius: 0%
+}
+
+.closeModal {
+    float: right;
+    line-height: 1;
+    color: #f27474;
+    font-size: 23px
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+        width: 120px
+    }
+
+    .p-4 {
+        padding: 2.5rem !important
+    }
+}
+
+@media (min-width: 992px) {
+    .p-4 {
+        padding: 3.5rem !important
+    }
+}
+
+.rounded {
+    border-radius: .25rem !important
+}
+
+.play-instruction li {
+    margin-bottom: 1.5rem;
+    font-family: minecraft, monospace;
+    color: #fff
+}
+
+.play-instruction span {
+    font-family: minecraft, monospace;
+    color: #ff0
+}
+
+.play-instruction {
+    font-size: 16px
+}
+
+.join-ip {
+    font-family: minecraft, serif;
+    position: relative;
+    width: 368px;
+    height: 40px;
+    padding: 0 14px;
+    margin: auto auto 15px;
+    border: 2px solid #a0a0a0;
+    background: #000;
+    font-size: 15px;
+    color: #fff;
+    line-height: 42px;
+    cursor: pointer;
+    margin-top: 45px
+}
+
+@media (max-width: 992px) {
+    .join-ip {
+        width: 255px
+    }
+}
+
+.server_ip_modal p {
+    font-family: minecraft, monospace;
+    color: #fff
+}
+
+.mc-button {
+    font-family: minecraft, monospace;
+    width: 368px;
+    height: 40px;
+    background: url(/static/img/button.png) no-repeat;
+    color: #fff;
+    text-align: center;
+    line-height: 43px;
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: 2px 2px 0 #383838;
+    margin: auto auto 0
+}
+
+@media (max-width: 992px) {
+    .mc-button {
+        width: 255px
+    }
+}
+
+.mc-button:hover {
+    background-position: 0 -80px
+}
+
+.mc-button:active {
+    background-position: 0 -40px
+}
+
+.hr {
+    margin-bottom: 15px;
+    margin-top: 2px
+}
+
+.footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 2px
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fdb42a
+}
+
+.svgStick {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px
+}
+
+.svgWin {
+    display: block;
+    width: 100%;
+    margin-top: -8px;
+    transform: scale(.7)
+}
+
+.case .roulette .items {
+    margin-top: -15px
+}
+
+.tableDonate {
+    margin: 60px;
+    margin-top: 0;
+    margin-bottom: 50px
+}
+
+.table {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 666;
+    font-size: 15px
+}
+
+.tableBg {
+    background: #dcdcdc;
+    border-radius: 0 0 10px 10px
+}
+
+.table-responsive {
+    border-radius: 15px
+}
+
+@media (max-width: 992px) {
+    .decoreImage {
+        display: none
+    }
+
+    .margin-donate-mobile {
+        margin-top: 30px
+    }
+
+    .header .logo a {
+        text-align: center;
+        padding-top: 14px;
+        padding-bottom: 14px
+    }
+
+    .header .menu {
+        padding-top: 0;
+        padding-bottom: 15px;
+        text-align: center
+    }
+
+    .onlyPC {
+        display: none
+    }
+
+    .newYear {
+        transform: scale(2);
+        margin-top: -15px
+    }
+
+    .case .roulette {
+        margin-left: 0;
+        border-radius: 0;
+        margin-right: 0
+    }
+
+    .case {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .svgWin {
+        margin-top: -9px
+    }
+
+    .donatesÐ ÐŽheck {
+        padding: 20px
+    }
+
+    .onlyMobileTop {
+        margin-top: 15px
+    }
+
+    .tableDonate {
+        margin: 12px;
+        margin-top: 0;
+        margin-bottom: 12px
+    }
+
+    .tableDonate .name {
+        font-size: 21px
+    }
+
+    ::-webkit-scrollbar {
+        display: none
+    }
+
+    .m-20 {
+        margin-top: 20px
+    }
+
+    .isNotChance {
+        margin-top: -25px
+    }
+
+    .donatesÐ ÐŽheck {
+        margin-top: -20px
+    }
+
+    .header .ip a {
+        display: none
+    }
+
+    .header .ip span {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 0
+    }
+
+    .header .ip {
+        text-align: center
+    }
+}
+
+@media (min-width: 992px) {
+    .header .ip {
+        float: right
+    }
+
+    .onlyMobile {
+        display: none
+    }
+
+    .m-10 {
+        margin-top: 15px
+    }
+
+    .donatesÐ ÐŽheck {
+        padding: 40px;
+        padding-top: 0;
+        margin-top: 10px;
+        padding-bottom: 0
+    }
+
+    .isNotChance {
+        margin-top: -30px
+    }
+}
+
+.periodRoulette {
+    position: absolute;
+    right: 5px;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.donatesÐ ÐŽheck {
+    display: none
+}
+
+.btnGoPayCases {
+    font-family: minecraft, monospace;
+    width: 368px;
+    height: 40px;
+    background: url("/static/img/button.png") no-repeat;
+    color: #fff;
+    text-align: center;
+    border: none;
+    line-height: 43px;
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: 2px 2px 0 #383838;
+    margin: auto auto 0
+}
+
+.btnGoPayCases:hover {
+    background-position: 0 -80px
+}
+
+.btnGoPayCases:active {
+    background-position: 0 -40px
+}
+
+.margin-donate-mobile {
+    z-index: 10
+}
+
+.imgDecoreDonate {
+    z-index: 5
+}
+
+@media (max-width: 1000px) {
+    .ip span {
+        margin-left: -4px
+    }
+
+    .menu {
+        overflow: scroll;
+        max-width: 100%
+    }
+}
+
+.btnGoM {
+    font-family: minecraft, monospace;
+    width: 368px;
+    height: 40px;
+    background: url("/static/img/button.png") no-repeat;
+    color: #fff;
+    text-align: center;
+    border: none;
+    line-height: 43px;
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: 2px 2px 0 #383838;
+    margin: auto auto 0
+}
+
+.btnGoM:hover {
+    background-position: 0 -80px
+}
+
+.btnGoM:active {
+    background-position: 0 -40px
+}
+
+@media (max-width: 992px) {
+    .btnGoMoneyPay {
+        width: 300px
+    }
+
+    .btnGoPay {
+        width: 300px
+    }
+
+    .btnGoM {
+        width: 300px
+    }
+
+    .btnGoPayCases {
+        width: 300px
+    }
+}
+
+.alertSite {
+    background: #00d285;
+    font-family: 'Montserrat';
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.alertSales {
+    background: #ff6347;
+    font-family: 'Montserrat';
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+#particles-js {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%
+}
+
+@media (min-width: 1000px) {
+    .footerMenu {
+        display: flex;
+        justify-content: center
+    }
+
+    .r10m {
+        padding-right: 10px
+    }
+
+    .l10m {
+        padding-left: 10px
+    }
+}
+
+.footerMenu a {
+    display: block;
+    color: #404040;
+    text-decoration: none;
+    transition: .7 ease
+}
+
+@media (max-width: 1000px) {
+    .footerMenu a {
+        width: 100%
+    }
+
+    .l10m {
+        margin-top: 5px;
+        margin-bottom: 10px
+    }
+}
+
+.flex {
+    display: flex
+}
+
+.table-responsive {
+    background: rgba(255, 255, 255, .9);
+    margin-top: 20px
+}
+
+.nameFT {
+    width: 200px;
+    background: rgba(245, 246, 247, .6);
+    border-right: 1px solid #c5d7e4;
+    color: #777;
+    padding-left: 12px
+}
+
+.nameQuestion {
+    width: 222px;
+    background: rgba(245, 246, 247, .6);
+    border-right: 1px solid #c5d7e4;
+    padding-left: 12px
+}
+
+.footerLogo {
+    font-weight: bold;
+    color: #404040
+}
+
+@media (max-width: 1000px) {
+    .flex {
+        margin-top: -10px
+    }
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3001;
+    background: #e5e5e5
+}
+
+.preloader__row {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50);
+    text-align: center
+}
+
+.preloader__row img {
+    width: 175px
+}
+
+.preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s
+}
+
+.loaded_hiding .preloader {
+    transition: .3s opacity;
+    opacity: 0
+}
+
+.loaded .preloader {
+    display: none
+}
+
+#circle-loader {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    padding-right: 10px;
+    position: relative;
+    border-top: 4px solid #e5e5e5;
+    border-right: 4px solid #e5e5e5;
+    border-bottom: 4px solid #e5e5e5;
+    border-left: 4px solid #007bff;
+    animation: rotateCircleLoader 1.1s infinite linear;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+
+@keyframes rotateCircleLoader {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@media (max-width: 1000px) {
+    .alertSite {
+        padding: 12px
+    }
+}
+
+@media (min-width: 1000px) {
+    .period.mvp {
+        transform: scale(.8)
+    }
+}
+
+.donate[data-donate="6"] img {
+    width: 195px
+}
+
+.donate[data-donate="7"] img {
+    width: 195px
+}
+
+#imgBuyModal {
+    max-width: 255px
+}
+
+.overflowBlockDonates {
+    display: flex;
+    overflow-x: scroll;
+    min-height: 358px;
+    height: 358px
+}
+
+.scrollTextDonate {
+    color: #808080;
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+    margin-bottom: -25px
+}
+
+.unBan {
+    padding-top: 2rem;
+    background: rgba(0, 0, 0, .04)
+}
+
+.bg-unBan {
+    background: #fbfbfb;
+    box-shadow: 0 7px 122px rgba(0, 0, 0, .1);
+    border-radius: 15px
+}
+
+@media (min-width: 1000px) {
+    .bg-unBan {
+        width: 90%
+    }
+
+    .marginBgUnBan {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 35px;
+        justify-content: center
+    }
+
+    .unBan {
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+@media (max-width: 1000px) {
+    .bg-unBan {
+        width: 100%
+    }
+
+    .unBan {
+        padding-bottom: 15px
+    }
+
+    .marginBgUnBan {
+        margin: 20px
+    }
+}
+
+.marginBgUnBan .titleBlock {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    color: #404040
+}
+
+.form-coins {
+    margin-top: 20px;
+    margin: 25px
+}
+
+.form-coins .form-label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #404040;
+    text-align: left
+}
+
+.form-coins .form-label .red {
+    color: #e85151
+}
+
+.form-coins .input {
+    border: none;
+    background: #dfdfdf;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    display: block;
+    border-radius: 10px
+}
+
+.bg-unBan button {
+    filter: drop-shadow(0 -1px 15px rgba(0, 0, 0, .13));
+    background: #fdb42a;
+    display: block;
+    color: #404040;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    width: 245px;
+    margin-top: -3px;
+    margin-bottom: 20px;
+    border-radius: 10px
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.onlyPC .decoreUnBan {
+    width: 19rem;
+    margin-left: -1rem;
+    transform: scale(1.35);
+    padding-top: 25px;
+}
+
+.unBan .row .onlyPC.col-2 {
+    margin-top: 20px;
+    margin-left: -65px
+}
